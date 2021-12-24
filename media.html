@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@media query</title>
+    <style>
+        body{
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+        }
+        nav{
+            width: 100%; 
+            box-sizing: border-box;
+            background-color: rgb(231, 223, 223);
+        }
+        nav>ul{
+            margin: 0;
+        }
+
+        ul>li{
+            display: inline-flex;
+            margin: 0;
+            background-color: aqua;
+            padding: 10px;
+            font-size: 18px;
+        }
+        main>section:nth-child(1){
+            width: 100%;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        main> section:nth-child(2){
+            display: inline-flex;
+            width: 100%;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding-left: 5px;
+            
+        }
+
+        main>section:nth-child(2)>div{
+            width: 200px;
+            height: 250px;
+            border-radius: 12px;
+            border: none;
+            background-color: white;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+
+        main>section:nth-child(2) > div> img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px 12px 0 0 ;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>&#8810; sal &#8811;</li>
+            <li>all</li>
+            <li>ber</li>
+            <li>goy</li>
+            <li>alyp ber</li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            Home   >  salam  >  HomeProducts
+        </section>
+        <section>
+            <div>
+                <img src="./nature.jpeg" alt="product">
+                <i>Product name</i>
+            </div>
+            <div>
+                <img src="./nature.jpeg" alt="product">
+                <i>Product name</i>
+            </div>
+            <div>
+                <img src="./nature.jpeg" alt="product">
+                <i>Product name</i>
+            </div>
+            <div>
+                <img src="./nature.jpeg" alt="product">
+                <i>Product name</i>
+            </div>
+            <div>
+                <img src="./nature.jpeg" alt="product">
+                <i>Product name</i>
+            </div>
+            <div>
+                <img src="./nature.jpeg" alt="product">
+                <i>Product name</i>
+            </div>
+            <div>
+                <img src="./nature.jpeg" alt="product">
+                <i>Product name</i>
+            </div>
+            <div>
+                <img src="./nature.jpeg" alt="product">
+                <i>Product name</i>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
