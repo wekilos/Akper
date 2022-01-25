@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FFa;
+    display: inline-flex;
+    justify-content: center;
+    align-items:center;
+    /* flex-wrap: wrap;
+    flex-direction: row-reverse; */
+    flex-flow: row wrap;   /* short hand for flext-direction second flex-wrap  */
+    justify-content: center;
+ 
+}
+
+
+.item{
+    height: 200px;
+    width: 150px;
+    background-color: #efefef;
+    margin: 5px;
+    font-size: 34px;
+    display: inline-flex;
+    justify-content: center;   /* icindakileri keseligine yerleshishini sazlayar*/
+    align-items:center;         /* icindakileri dikligine yerleshishini sazlayar*/
+    order: 3;
+}
+
+
+.item1{
+    height: 150px;
+    order: 1;
+    flex-grow: 2;
+    flex-shrink: 3;
+}
+
+.item2{
+    height: 100px;
+    align-self: flex-end;
+}
+
+.item6{
+    height: 300px;
+    order: 2;
+}
